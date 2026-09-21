@@ -335,12 +335,14 @@
     </div>
   </div>
 
-  <script type="importmap">
-    { "imports": { "three": "https://unpkg.com/three@0.157.0/build/three.module.js" } }
-  </script>
+  <!-- three.js r157 UMD build, vendored for offline play. Classic script (no
+       ES-module import) because Chrome CORS-blocks module imports from
+       file:// origin 'null' -- the reason this game originally pulled three
+       from a CDN. UMD sets window.THREE; the game module binds it below. -->
+  <script src="vendor/three.umd.js"></script>
 
   <script type="module">
-    import * as THREE from 'three';
+    const THREE = window.THREE;
 
     // ── AUDIO CONTEXT ──
     let audioCtx;
