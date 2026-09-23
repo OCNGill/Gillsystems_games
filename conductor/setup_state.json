@@ -1,0 +1,7 @@
+{
+  "repo": "Gillsystems_games",
+  "last_updated": "2026-09-22",
+  "conductor_version": "1.0",
+  "active_games": ["Deadwood_alien_shooter", "Escape-From-Duxbury", "Pilgrim-Trail-Game", "The_Commander_Boomer_Shooter"],
+  "deploy_target": "gillsystems.net"
+}
